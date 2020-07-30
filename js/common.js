@@ -52,6 +52,25 @@ $(document).ready(function () {
         });
     }
 
+    // scroll to top
+    (function ($) {
+        $(function () {
+            $('#up').click(function () {
+                $('html, body').animate({ scrollTop: 0 }, 1000);
+                return false;
+            })
+        })
+    })(jQuery)
 
+    // price slider
+
+
+    var swiper = new Swiper('.swiper-container', {
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 
 });

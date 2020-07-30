@@ -5,6 +5,11 @@
 }
 
 @media(max-width:1600.8px) {
+
+    .totopbtn {
+        right: 200px;
+    }
+
     header.header {
         height: 70px;
     }
@@ -486,6 +491,10 @@
 }
 
 @media(max-width:1024.8px) {
+    .totopbtn {
+        right: 100px;
+    }
+
 
     div.juxtapose {
         width: 100% !important;
@@ -500,6 +509,10 @@
 }
 
 @media(max-width:991.8px) {
+    .totopbtn {
+        right: 50px;
+    }
+
     header.header {
         z-index: 99;
     }
@@ -712,6 +725,9 @@
 }
 
 @media(max-width:767.8px) {
+    .totopbtn {
+        display: none;
+    }
 
     .infosection,
     footer {
