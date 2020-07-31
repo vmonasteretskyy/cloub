@@ -14,8 +14,6 @@
         height: 70px;
     }
 
-
-
     .header__logo a img {
         max-width: 150px;
     }
@@ -184,6 +182,42 @@
         height: 240px;
     }
 
+    .mostpopular {
+        top: -60px;
+        height: 60px;
+    }
+
+    .price-table thead tr td {
+        height: 180px;
+    }
+
+    .price h1 {
+        margin-bottom: 150px;
+    }
+
+    .price-table tbody tr td {
+        height: 70px;
+    }
+
+    .advsect__box img {
+        margin-bottom: 20px;
+    }
+
+    .advsect__box {
+        margin-bottom: 35px;
+    }
+
+    .comment__descr p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+
+
+
+
+
+
 
 
 
@@ -209,6 +243,10 @@
         line-height: 38px;
     }
 
+    .price-table thead tr td {
+        font-size: 20px;
+    }
+
     /* 18-16 */
     .buttonsbox a,
     .whyneed__list ul li,
@@ -216,13 +254,17 @@
     .footer__nav>ul>li span,
     .footer__contacts p,
     .footer__contacts a,
-    .footer__rules .ruleslink {
+    .footer__rules .ruleslink,
+    .mostpopular,
+    .price-table thead tr td span,
+    .price-table tbody tr td {
         font-size: 16px;
     }
 
     /* 20-18 */
     .functionality__description .descr,
-    .blue-link {
+    .blue-link,
+    .comment__position {
         font-size: 18px;
         line-height: normal;
     }
@@ -232,12 +274,16 @@
     }
 
     .change-photobtns,
-    .whyneed .section-title {
+    .whyneed .section-title,
+    .reviews .section-title-center,
+    .clients .section-title-center {
         margin-bottom: 50px;
     }
 
     .functionality,
-    .partners-getting {
+    .partners-getting,
+    .reviews,
+    .clients {
         padding: 100px 0;
     }
 
@@ -257,6 +303,12 @@
     .footer__contacts a,
     .footer__rules .ruleslink {
         margin-bottom: 20px;
+    }
+}
+
+@media(max-width:1400.8px) {
+    .clients__content img {
+        max-width: 200px;
     }
 }
 
@@ -440,7 +492,39 @@
         min-height: initial;
     }
 
+    .clients__content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
+    .clients__content a {
+        display: inline-block;
+        margin-bottom: 25px;
+    }
+
+    .price-table thead tr td span {
+        margin-top: 10px;
+    }
+
+    .price-table thead tr td {
+        height: 150px;
+    }
+
+    .price-table tbody tr td {
+        height: 50px;
+    }
+
+    .advsect__box span {
+        font-size: 16px;
+    }
+
+    .advsect__box {
+        margin-bottom: 25px;
+    }
+
+    .infosection.getpres .blue-button {
+        margin-top: 20px;
+    }
 
 
     /* --- 18-16*/
@@ -450,6 +534,10 @@
     .firstsect__infoblock .description,
     .whyneed__list .title {
         font-size: 16px;
+    }
+
+    .price-table thead tr td {
+        font-size: 18px;
     }
 
     /* 28-24 */
@@ -706,9 +794,13 @@
         color: #fff;
     }
 
+    .infosection.getpres {
+        overflow: hidden;
+    }
 
-
-
+    .price {
+        padding: 50px 0;
+    }
 
 
     .automatization__descr p,
@@ -860,6 +952,37 @@
         text-align: center;
     }
 
+    .respscroll {
+        width: 100%;
+        overflow: scroll;
+    }
+
+    .price-table {
+        margin-top: 60px;
+        width: 700px;
+    }
+
+    .price h1 {
+        margin-bottom: 50px;
+    }
+
+    .comment__pic {
+        width: 100%;
+    }
+
+    .comment__pic img {
+        max-width: 100%;
+        width: auto;
+        display: block;
+        margin: 0 auto 20px;
+    }
+
+    .infosection.getpres .contform input {
+        width: 28%;
+    }
+
+
+
 
 
 
@@ -875,7 +998,11 @@
     }
 
     .functionality,
-    .partners-getting {
+    .partners-getting,
+    .functionality,
+    .partners-getting,
+    .reviews,
+    .clients {
         padding: 70px 0;
     }
 
@@ -1064,11 +1191,54 @@
         padding-right: 0;
     }
 
+    .price h1 {
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .price {
+        background-position: center top -5px;
+    }
+
+    .whyneed.advsect {
+        text-align: center;
+    }
+
+    .advsect__box {
+        width: 100%;
+    }
+
+    .advsect__box:nth-child(3),
+    .advsect__box:nth-child(4) {
+        margin-bottom: 25px;
+    }
+
+    .comment__name {
+        font-size: 20px;
+    }
+
+    .infosection.getpres .contform input {
+        width: 100%;
+    }
+
+    .infosection.getpres .blue-button {
+        padding: 11px 55px;
+    }
+
+    .comment {
+        padding: 20px 10px;
+    }
+
+
+
+
+
 
 
     .change-photobtns,
     .whyneed .section-title {
         margin-bottom: 30px;
+        position: relative;
     }
 
     .automatization {
@@ -1081,6 +1251,34 @@
     .videosect {
         padding: 50px 0;
     }
+
+    @keyframes menupic {
+        0% {
+            background-position: left 20px bottom 60px;
+        }
+
+        50% {
+            background-position: left -200px bottom 60px;
+        }
+
+        100% {
+            background-position: left 20px bottom 60px;
+        }
+    }
+
+    .header .header__menu {
+        background-color: #0c1524;
+        background-image: url('../images/cloub_white.svg');
+        background-repeat: no-repeat;
+        background-position: left 20px bottom 60px;
+        background-size: 150%;
+        animation: menupic;
+        -webkit-animation: menupic;
+        animation-duration: 6s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+    }
+
 
 }
 
@@ -1120,6 +1318,12 @@
     .footer__logo img {
         max-width: 150px;
     }
+
+    .infosection.getpres .blue-button {
+        padding: 11px 40px;
+    }
+
+
 }
 
 
