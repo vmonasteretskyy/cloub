@@ -6,6 +6,12 @@
 
 @media(max-width:1600.8px) {
 
+    .infosection.getpres .longarrow {
+        right: 17%;
+        top: -20px;
+        width: 274px;
+    }
+
     .totopbtn {
         right: 200px;
     }
@@ -212,22 +218,90 @@
         line-height: 26px;
     }
 
+    .portfolio-topsect {
+        height: 350px;
+    }
 
+    .portfolio-slider .swiper-slide {
+        width: 400px;
+    }
 
+    .portfolio-slider .swiper-slide:hover .slidesect {
+        transform: scale(1.1);
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        -ms-transform: scale(1.1);
+        -o-transform: scale(1.1);
+    }
 
+    .portfolio-slider .slidesect__hover .descr {
+        font-size: 16px;
+        line-height: 24px;
+    }
 
+    .portfolio-slider .slidesect__hover .title {
+        font-size: 26px;
+        line-height: 36px;
+        right: -20px;
+    }
 
+    .portfmodal__section {
+        max-width: 1300px;
+        margin: 75px auto;
+    }
 
+    .portfmodal__topsect {
+        padding: 50px 70px 30px 70px;
+    }
 
+    .portfmodal__formsect {
+        padding: 30px 70px 30px 70px;
+    }
 
+    .portfmodal__title:after {
+        width: 75px;
+    }
 
+    .portfmodal__title {
+        margin-bottom: 25px;
+    }
 
+    .portfmodal__subtitle {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
 
+    .portfmodal__information a {
+        font-size: 18px;
+        margin-bottom: 25px;
+    }
 
+    .portfmodal__list {
+        font-size: 16px;
+    }
 
+    .portfmodal__list li:not(:last-child) {
+        margin-bottom: 10px;
+    }
 
+    .portfmodal__formsect h4 {
+        font-size: 20px;
+    }
 
+    .portfmodal__formsect p {
+        margin-bottom: 25px;
+    }
 
+    .details__content p,
+    .details__content img,
+    .opennews img,
+    .opennews p {
+        margin-bottom: 50px;
+    }
+
+    .opennews {
+        padding-top: 100px;
+    }
 
     /* --------------------- */
     .firstsect__infoblock h1 {
@@ -238,7 +312,12 @@
     .firstsect__infoblock h1,
     .section-title,
     .section-title-center,
-    .infosection h3 {
+    .infosection h3,
+    .portfolio__titlebox h1,
+    .portfmodal__title,
+    .portfmodal__formsect h4,
+    .details__content h2,
+    .opennews h1 {
         font-size: 28px;
         line-height: 38px;
     }
@@ -254,7 +333,7 @@
     .footer__nav>ul>li span,
     .footer__contacts p,
     .footer__contacts a,
-    .footer__rules .ruleslink,
+    .footer__rules .pxruleslink,
     .mostpopular,
     .price-table thead tr td span,
     .price-table tbody tr td {
@@ -283,7 +362,10 @@
     .functionality,
     .partners-getting,
     .reviews,
-    .clients {
+    .clients,
+    .portfolio-slider,
+    .details__content,
+    .news-section {
         padding: 100px 0;
     }
 
@@ -310,9 +392,16 @@
     .clients__content img {
         max-width: 200px;
     }
+
+    .portfmodal__section {
+        max-width: 1150px;
+    }
 }
 
 @media(max-width:1199.8px) {
+    .infosection.getpres .longarrow {
+        display: none;
+    }
 
     .header__menu ul li a,
     .header__menu ul li span {
@@ -525,6 +614,45 @@
     .infosection.getpres .blue-button {
         margin-top: 20px;
     }
+
+    .portfmodal__section {
+        max-width: 100%;
+    }
+
+    .portfolio-modalwindow {
+        padding: 0 25px;
+    }
+
+    .modalform input {
+        height: 36px;
+        width: 160px;
+        padding-left: 10px;
+    }
+
+    .modalform input,
+    .modalform input::placeholder {
+        font-size: 16px;
+        line-height: normal;
+    }
+
+    .news-box__pic {
+        height: 200px;
+    }
+
+    .news-box.topnews .news-box__pic {
+        height: 300px;
+    }
+
+    .news-box {
+        padding-bottom: 15px;
+        margin-bottom: 30px;
+    }
+
+
+
+
+
+
 
 
     /* --- 18-16*/
@@ -769,7 +897,7 @@
     }
 
     .videosect:before {
-        width: 100%;
+        width: 67%;
     }
 
     .videosect__desctop {
@@ -802,6 +930,38 @@
         padding: 50px 0;
     }
 
+    .portfmodal__modalpic {
+        margin-bottom: 30px;
+    }
+
+    .modalform {
+        flex-wrap: wrap;
+    }
+
+    .modalform input {
+        width: 30%;
+    }
+
+    .modalform button {
+        width: 50%;
+        margin: 20px auto 0;
+    }
+
+    .news-box.topnews .news-box__pic,
+    .news-box__pic {
+        height: 250px;
+    }
+
+
+
+
+
+
+
+
+
+
+
 
     .automatization__descr p,
     .whyneed__list ul li,
@@ -813,7 +973,9 @@
         padding-left: 0;
     }
 
-
+    .portfolio-topsect {
+        height: 250px;
+    }
 }
 
 @media(max-width:767.8px) {
@@ -916,9 +1078,9 @@
         width: 40%;
     }
 
-    .videosect__content {
-        display: none;
-    }
+    /* .videosect__content {
+    display: none;
+} */
 
     .videosect__content-phone {
         display: block;
@@ -929,7 +1091,7 @@
     }
 
     .videosect:before {
-        width: 80%;
+        width: 70%;
         height: 450px;
     }
 
@@ -981,6 +1143,28 @@
         width: 28%;
     }
 
+    .portfolio-slider {
+        padding: 70px 0;
+        margin-bottom: 50px;
+    }
+
+    .portfolio-slider .swiper-slide {
+        width: 300px;
+    }
+
+    .modalform button {
+        min-width: 300px;
+    }
+
+    .details__content h2,
+    .opennews h1 {
+        font-size: 24px;
+        line-height: 32px;
+    }
+
+    .opennews {
+        padding-top: 70px;
+    }
 
 
 
@@ -1002,14 +1186,68 @@
     .functionality,
     .partners-getting,
     .reviews,
-    .clients {
+    .clients,
+    .details__content,
+    .news-section {
         padding: 70px 0;
     }
+
+    .videosect .section-title,
+    .infosection h3 {
+        position: relative;
+    }
+
+    .section-title:after,
+    .infosection h3:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        margin: 0 !important;
+    }
+
 
 
 }
 
 @media(max-width:575.8px) {
+
+    .infosection.viewdemo,
+    .infosection.createb2b {
+        text-align: center;
+    }
+
+    .videosect .section-title,
+    .infosection h3,
+    .section-title.white-color {
+        position: relative;
+        text-align: center !important;
+    }
+
+    .section-title:after,
+    .infosection h3:after,
+    .section-title.white-color:after {
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        right: 0;
+        margin: 0 auto !important;
+    }
+
+    .videosect__content {
+        display: none;
+    }
+
+    .videosect__content-phone {
+        display: block;
+    }
+
+    .videosect:before {
+        width: 100%;
+    }
+
+    .videosect .section-title {
+        max-width: 100%;
+    }
 
     .contform button {
         font-size: 16px;
@@ -1229,11 +1467,27 @@
         padding: 20px 10px;
     }
 
+    .portfolio-topsect {
+        overflow: hidden;
+    }
 
+    .portfolio__titlebox h1:after {
+        width: 70px;
+    }
 
+    .portfolio__titlebox .infosection__figure {
+        width: 100%;
+    }
 
+    .portfolio-slider {
+        padding: 50px 0;
+    }
 
-
+    .portfolio-slider .swiper-button-prev,
+    .portfolio-slider .swiper-button-next {
+        width: 10px;
+        height: 24px;
+    }
 
     .change-photobtns,
     .whyneed .section-title {
@@ -1248,7 +1502,15 @@
     .whyneed,
     .functionality,
     .partners-getting,
-    .videosect {
+    .videosect,
+    .functionality,
+    .partners-getting,
+    .functionality,
+    .partners-getting,
+    .reviews,
+    .clients,
+    .infosection.getpres,
+    .clients {
         padding: 50px 0;
     }
 
@@ -1279,8 +1541,115 @@
         animation-timing-function: ease-in-out;
     }
 
+    .portfolio-slider .swiper-button-next {
+        margin-left: 25px;
+    }
 
+    .portfmodal__topsect {
+        padding: 50px 20px 20px 20px;
+    }
+
+    .portfolio-modalwindow {
+        padding: 0 15px;
+    }
+
+    .portfmodal__section {
+        margin: 55px auto;
+    }
+
+    .portfmodal__title {
+        font-size: 22px;
+        line-height: normal;
+        position: relative;
+    }
+
+    .portfmodal__title:after {
+        position: absolute;
+        bottom: -5px;
+        top: initial;
+        right: 0;
+    }
+
+    .portfmodal__formsect {
+        padding: 20px;
+    }
+
+    .modalform input {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .modalform button {
+        margin: 0 auto;
+        max-width: 90%;
+        min-width: initial;
+        width: 100%;
+    }
+
+    .close-modal {
+        top: 15px;
+        right: 15px;
+    }
+
+    .details__content,
+    .bottomform .portfmodal__formsect {
+        padding: 50px 0;
+    }
+
+    .details__content h2 {
+        padding-bottom: 15px;
+    }
+
+    .details__content p,
+    .portfmodal__formsect p {
+        font-size: 16px;
+    }
+
+    .portfmodal__formsect h4 {
+        margin-bottom: 20px;
+    }
+
+    .news-box.topnews .news-box__pic,
+    .news-box__pic {
+        height: 200px;
+    }
+
+    .pagination ul li a {
+        width: 22px;
+    }
+
+    .modalform button {
+        margin-top: 20px;
+    }
+
+    .opennews {
+        padding: 50px 0;
+    }
+
+    .opennews-social ul {
+        display: block;
+        margin-top: 10px;
+    }
 }
+
+@media(max-width:413.8px) {
+    .portfolio-slider .slidesect__hover .descr {
+        bottom: 16px;
+        font-size: 14px;
+    }
+
+    .portfolio-slider .slidesect__hover .title {
+        right: 10px;
+        font-size: 18px;
+        line-height: 26px;
+    }
+
+    .portfolio-slider .slidesect__hover .title:before {
+        width: 35px;
+        margin-right: 10px;
+    }
+}
+
 
 @media(max-width:360.8px) {
     .header__contact .phonenum span {
@@ -1323,6 +1692,9 @@
         padding: 11px 40px;
     }
 
+    .pagination ul li {
+        margin: 0 3px;
+    }
 
 }
 
@@ -1360,7 +1732,7 @@
 
 
 
-@media(max-height:650px) {
+@media(max-height:650px) and (max-width:767.8px) {
     .header__menu>ul {
         min-height: auto;
         overflow: scroll;
