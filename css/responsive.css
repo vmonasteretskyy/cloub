@@ -1036,7 +1036,7 @@
     }
 
     .partnersgett {
-        height: 160px;
+        height: 150px;
         padding: 5px;
     }
 
@@ -1728,10 +1728,6 @@
         max-width: 100%;
     }
 
-    .partnersgett {
-        height: 125px;
-    }
-
     .footer__nav,
     .footer__contacts {
         width: 100%;
@@ -1758,6 +1754,10 @@
         margin: 0 3px;
     }
 
+    .partnersgett {
+        max-width: 290px !important;
+        height: 130px;
+    }
 }
 
 
