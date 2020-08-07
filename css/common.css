@@ -1474,7 +1474,8 @@ header.header {
 .buttonsbox a.bluebtn:hover,
 .viewdemo .blue-button:hover,
 .consultation .blue-button:hover,
-.infosection.getpres .blue-button:hover {
+.infosection.getpres .blue-button:hover,
+.createb2b .blue-button:hover {
     background: linear-gradient(180deg, #1988BB 0%, #21A0DA 100%);
 
 }
@@ -1517,8 +1518,9 @@ header.header {
     background-color: #E5E5E5;
     background-image: url('../images/price-bg.png');
     background-repeat: no-repeat;
-    background-position: center top -97px;
+    background-position: center top -50px;
     background-size: 100% auto;
+    background-attachment: fixed;
 }
 
 .price h1 {
@@ -2524,8 +2526,6 @@ body.overhidd {
 }
 
 
-
-/* 1 */
 
 
 
