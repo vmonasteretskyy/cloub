@@ -973,15 +973,38 @@
         height: 250px;
     }
 
+    .consultation__section {
+        max-width: 700px;
+    }
 
+    .consultation__section .title {
+        max-width: 350px;
+        font-size: 24px;
+        line-height: 32px;
+    }
 
+    .consultation__section form {
+        max-width: 300px;
+    }
 
+    .consultation__section form input {
+        height: 40px;
+        margin-bottom: 20px;
+    }
 
+    .consultation__section {
+        background-position: right -100px top;
+        min-height: initial;
+    }
 
+    .consultation__section form input,
+    .consultation__section form input::placeholder {
+        font-size: 16px;
+    }
 
-
-
-
+    .consultation__section form button {
+        margin-top: 15px;
+    }
 
 
     .automatization__descr p,
@@ -1191,9 +1214,15 @@
         text-align: center;
     }
 
+    .consultation__section {
+        max-width: 400px;
+        background-image: none;
+        padding: 50px;
+    }
 
-
-
+    .consultation__section form button {
+        height: 42px;
+    }
 
 
 
@@ -1632,6 +1661,19 @@
         right: 0;
     }
 
+    .access__section {
+        max-width: calc(100% - 30px);
+    }
+
+
+
+
+
+
+
+
+
+
     .portfmodal__formsect {
         padding: 20px;
     }
@@ -1691,6 +1733,24 @@
     .opennews-social ul {
         display: block;
         margin-top: 10px;
+    }
+
+    .consultation__section {
+        max-width: calc(100% - 30px);
+        padding: 50px 20px;
+    }
+
+    .consultation__section form button {
+        max-width: 100%;
+    }
+
+    .consultation__section .title {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .consultation__section form {
+        max-width: 100%;
     }
 }
 
@@ -1821,5 +1881,11 @@
 
     .firstsect {
         min-height: 400px;
+    }
+
+    .consultation-modal,
+    .access-modal {
+        display: block;
+        padding: 50px 0;
     }
 }

@@ -63,7 +63,7 @@
                     </p>
                     <div class="buttonsbox">
                         <a href="#" class="bluebtn"><span>Демо-версия</span></a>
-                        <a href="#"><span>Консультация с экспертом</span></a>
+                        <a href="#" class="modal-consult"><span>Консультация с экспертом</span></a>
                     </div>
                 </div>
             </div>
@@ -550,8 +550,33 @@
         </div>
     </footer>
 
+    <div class="modalwindow-wrap">
+        <div class="consultation-modal">
+            <div class="consultation__section">
+                <img class="close-modal" src="images/icons/modal-close.svg" alt="close">
+                <div class="consult-box">
+                    <p class="title">Записаться на консультацию с нашим экспертом.</p>
+                    <form action="">
+                        <input type="text" placeholder="Імя">
+                        <input type="tel" placeholder="Номер телефона *">
+                        <button class="blue-button" type="submit"><span>Отправить заявку</span></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <div class="access-section">
+        <div class="access-modal">
+            <div class="access__section">
+                <img class="close-modal" src="images/icons/modal-close.svg" alt="close">
+                <div class="access__box">
+                    <img src="images/checked-pop.svg" alt="icon">
+                    <p>Благодарим, Ваша заявка отправлена, скоро с Вами свяжется наш специалист</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="js/jquery.min.js"></script>
     <script src="https://cdn.knightlab.com/libs/juxtapose/latest/js/juxtapose.min.js"></script>

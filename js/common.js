@@ -121,12 +121,34 @@ $(document).ready(function () {
     });
 
     $(document).mouseup(function (e) {
-        if ($(e.target).closest(".portfmodal__section").length === 0) {
+        if ($(e.target).closest(".portfmodal__section, .consultation__section").length === 0) {
             $('.modalwindow-wrap').hide();
             $('body').removeClass('overhidd');
         }
     });
 
+    // modal main page
+    $('.modal-consult').click(function () {
+        $('.modalwindow-wrap').show();
+        $('body').addClass('overhidd');
+    });
+
+    $('.consultation__section form button').click(function () {
+        $('.modalwindow-wrap').hide();
+        $('.access-section').show();
+    });
+
+    $('.access-modal .close-modal').click(function () {
+        $('.access-section').hide();
+        $('body').removeClass('overhidd');
+    });
+
+    $(document).mouseup(function (e) {
+        if ($(e.target).closest(".access__section").length === 0) {
+            $('.access-section').hide();
+            $('body').removeClass('overhidd');
+        }
+    });
 });
 
 
