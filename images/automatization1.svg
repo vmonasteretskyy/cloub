@@ -1,7 +1,7 @@
 <svg width="973" height="602" viewBox="0 0 973 602" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <style type="text/css">
-                <!-- .animate-arrow {
+                .animate-arrow {
                     stroke: red;
                 }
 
@@ -10,9 +10,9 @@
                 }
                 #logosvg {
                     fill: rgb(255, 255, 255);
-                } -->
+                }
 
-                <!-- @keyframes draw {
+                @keyframes draw {
                     from {
                         fill: rgba(255, 255, 255, 0);
                     }
@@ -20,9 +20,9 @@
                     to {
                         fill: rgba(255, 255, 255, 1);
                     }
-                } -->
+                }
 
-                <!-- .animate-arrow, .animate-arrow.arr {
+                .animate-arrow, .animate-arrow.arr {
                     fill: rgb(255, 255, 255);
                     fill:
                         transparent;
@@ -39,7 +39,7 @@
                         stroke-dashoffset:
                             0;
                     }
-                } -->
+                }
             </style>
 
 
